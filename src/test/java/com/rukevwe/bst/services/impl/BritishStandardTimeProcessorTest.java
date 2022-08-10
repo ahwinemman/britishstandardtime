@@ -49,6 +49,7 @@ class BritishStandardTimeProcessorTest {
         final String validTime9 = "11:55";
         final String validTime10 = "00:00";
         final String validTime11 = "12:00";
+        final String validTime12 = "14:00";
 
         // When
         final String result = britishStandardTimeProcessor.processInput(validTime);
@@ -63,7 +64,7 @@ class BritishStandardTimeProcessorTest {
         final String result9 = britishStandardTimeProcessor.processInput(validTime9);
         final String result10 = britishStandardTimeProcessor.processInput(validTime10);
         final String result11 = britishStandardTimeProcessor.processInput(validTime11);
-
+        final String result12 = britishStandardTimeProcessor.processInput(validTime12);
 
         // Then
         assertEquals(result, "one o'clock");
@@ -78,5 +79,6 @@ class BritishStandardTimeProcessorTest {
         assertEquals(result9, "five to noon");
         assertEquals(result10, "midnight");
         assertEquals(result11, "noon");
+        assertEquals(result12, "two o'clock");
     }
 }

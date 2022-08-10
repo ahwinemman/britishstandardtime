@@ -61,7 +61,7 @@ public class BritishStandardTimeProcessor implements TimeProcessor {
         }
 
         if (minutes == ZERO) {
-            return INT_CONVERTER.asWords(hours) + " o'clock";
+            return INT_CONVERTER.asWords(hours % 12) + " o'clock";
         }
 
         if (minutes == HALF_HOUR_FLAG) {
