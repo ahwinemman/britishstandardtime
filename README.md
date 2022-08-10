@@ -11,7 +11,6 @@ Application requirements include:
 1. Go into project directory
 2. Run **mvn clean package** to compile jar
 3. Run the generated jar **british-standard-time-jar-with-dependencies.jar** with below command
-   ```` cmd script ````
    `java -jar target/british-standard-time-jar-with-dependencies.jar`
 4. Then you will get this prompt: `Enter the input time you want to convert to british spoken form:`
 5. You can then type in the time you want to convert, for example: `1:00`
