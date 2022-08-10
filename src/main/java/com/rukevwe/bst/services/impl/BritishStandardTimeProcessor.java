@@ -147,33 +147,4 @@ public class BritishStandardTimeProcessor implements TimeProcessor {
 
         return inputTime.split(":");
     }
-
-    public static void main(String[] args) {
-
-        BritishStandardTimeProcessor britishStandardTimeProcessor = new BritishStandardTimeProcessor();
-
-        System.out.println(britishStandardTimeProcessor.processTime(1, 00));
-        System.out.println(britishStandardTimeProcessor.processTime(2, 00));
-        System.out.println(britishStandardTimeProcessor.processTime(2, 05));
-        System.out.println(britishStandardTimeProcessor.processTime(5, 20));
-        System.out.println(britishStandardTimeProcessor.processTime(9, 45));
-        System.out.println(britishStandardTimeProcessor.processTime(8, 40));
-        System.out.println(britishStandardTimeProcessor.processTime(17, 40));
-        System.out.println(britishStandardTimeProcessor.processTime(00, 00));
-        System.out.println(britishStandardTimeProcessor.processTime(12, 00));
-        System.out.println(britishStandardTimeProcessor.processTime(12, 30));
-        System.out.println(britishStandardTimeProcessor.processTime(00, 30));
-
-        System.out.println(britishStandardTimeProcessor.processTime(17, 30));
-        System.out.println(britishStandardTimeProcessor.processTime(17, 45));
-        System.out.println(britishStandardTimeProcessor.processTime(6, 11));
-        System.out.println(britishStandardTimeProcessor.processTime(6, 32));
-
-        System.out.println(britishStandardTimeProcessor.processTime(00, 32));
-        System.out.println(britishStandardTimeProcessor.processTime(12, 32));
-        System.out.println(britishStandardTimeProcessor.processTime(12, 28));
-
-        System.out.println(britishStandardTimeProcessor.processTime(11, 45));
-
-    }
 }
