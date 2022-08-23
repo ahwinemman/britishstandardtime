@@ -65,15 +65,15 @@ public class BritishStandardTimeProcessor implements TimeProcessor {
         }
 
         if (minutes == HALF_HOUR_FLAG) {
-            return processTimeAtHalfHour(hours, minutes);
+            return processTimeAtHalfHour(hours);
         }
 
         if (minutes == QUARTER_PAST_FLAG) {
-            return processTimeAtQuarterHour(hours, minutes);
+            return processTimeAtQuarterHour(hours);
         }
 
         if (minutes == QUARTER_TO_FLAG) {
-            return processTimeAtQuarterTo(hours, minutes);
+            return processTimeAtQuarterTo(hours);
         }
 
         if (!ifNumberOfMinutesIsInBetween30And60(minutes)) {
@@ -112,21 +112,21 @@ public class BritishStandardTimeProcessor implements TimeProcessor {
                 INT_CONVERTER.asWords(minutes) + " past " + INT_CONVERTER.asWords(hours % 12);
     }
 
-    private String processTimeAtQuarterTo(int hours, int minutes) {
+    private String processTimeAtQuarterTo(int hours) {
 
         String hourInWords = BRITISH_DEFAULT_HOUR_IN_WORDS_MAP.get(hours + 1);
 
         return hourInWords != null ? "quarter to " + hourInWords : "quarter to " + INT_CONVERTER.asWords(hours % 12 + 1);
     }
 
-    private String processTimeAtHalfHour(int hours, int minutes) {
+    private String processTimeAtHalfHour(int hours) {
 
         String hourInWords = BRITISH_DEFAULT_HOUR_IN_WORDS_MAP.get(hours);
 
         return hourInWords != null ? "half past " + hourInWords : "half past " + INT_CONVERTER.asWords(hours % 12);
     }
 
-    private String processTimeAtQuarterHour(int hours, int minutes) {
+    private String processTimeAtQuarterHour(int hours) {
 
         String hourInWords = BRITISH_DEFAULT_HOUR_IN_WORDS_MAP.get(hours);
 
