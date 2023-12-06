@@ -18,7 +18,7 @@ To install Maven 3.8.3+ on Mac or Windows, you can use the link below
 - https://www.baeldung.com/install-maven-on-windows-linux-mac
 
 ## Running Project
-1. Go into project directory
+1. Open a terminal window, go / cd into the project directory
 2. Run **mvn clean package** to compile jar
 3. Run the generated jar **british-standard-time-jar-with-dependencies.jar** with below command
    `java -jar target/british-standard-time-jar-with-dependencies.jar`
