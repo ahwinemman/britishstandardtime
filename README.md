@@ -5,7 +5,17 @@ Modelled this application after the 24 - hour format.
 ## Requirements
 Application requirements include:
 * JDK 1.11
-* Maven 3.8.3
+* Maven 3.8.3+
+
+To install Java 11 on Mac, you can use either of the below links:
+- https://medium.com/@kirebyte/using-homebrew-to-install-java-jdk11-on-macos-2021-4a90aa276f1c
+- https://medium.com/macoclock/using-homebrew-to-install-java-jdk11-on-macos-44b30f497b38
+ 
+To install Java 11 on Windows, you can use the link below
+- https://stackoverflow.com/questions/52511778/how-to-install-openjdk-11-on-windows
+
+To install Maven 3.8.3+ on Mac or Windows, you can use the link below
+- https://www.baeldung.com/install-maven-on-windows-linux-mac
 
 ## Running Project
 1. Go into project directory
